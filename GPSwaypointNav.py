@@ -19,11 +19,12 @@ class GPSFollower:
         rospy.Subscriber ('odom', Odometry, self.get_rotation)
         # Create a publisher for sending velocity commands
         self.vel_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
-        
+
         # Get latitude and longitude parameters
         # 300 meter away with bearing
         # self.target_latitude = rospy.get_param('~target_latitude', 32.073396303370245)
         # self.target_longitude = rospy.get_param('~target_longitude', 34.78357231127559)
+        
         #40 meter away
         self.target_latitude = rospy.get_param('~target_latitude', 32.072617848159176)
         self.target_longitude = rospy.get_param('~target_longitude', 34.787039205658836)
