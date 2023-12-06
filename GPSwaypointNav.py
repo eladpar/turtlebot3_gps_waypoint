@@ -24,13 +24,13 @@ class GPSFollower:
         # 300 meter away with bearing
         # self.target_latitude = rospy.get_param('~target_latitude', 32.073396303370245)
         # self.target_longitude = rospy.get_param('~target_longitude', 34.78357231127559)
-        
+
         #40 meter away
         self.target_latitude = rospy.get_param('~target_latitude', 32.072617848159176)
         self.target_longitude = rospy.get_param('~target_longitude', 34.787039205658836)
 
         # Tolerance for considering reaching the target coordinates (in meters)
-        self.tolerance = 2.0
+        self.tolerance = 1.0
         self.roll = self.pitch = self.yaw = 0.0
         self.target = 90
         self.kp=0.5

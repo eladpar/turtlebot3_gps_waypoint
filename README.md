@@ -12,8 +12,19 @@ sudo apt-get install ros-noetic-hector-gazebo-plugins
 pip3 install pyproj
 echo "export TURTLEBOT3_MODEL=waffle" >> ~/.bashrc
 ```
+clone this repo \
+for example:
+```shell
+cd ~
+git clone https://github.com/eladpar/turtlebot3_gps_waypoint.git turtlebot3_gps_waypoint_ws
+```
 please compile in the root directory of the project :
 ```shell
+catkin_make
+```
+for example:
+```shell
+cd ~/turtlebot3_gps_waypoint_ws # this is the root of the project
 catkin_make
 ```
 ### Launching
