@@ -35,11 +35,21 @@ Terminal 1:
 source devel/setup.bash
 roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
 ```
-Terminal 2:
+\
+
+#### C++ Terminal 2:
+```shell
+source devel/setup.bash
+rosrun gps_follower gps_follower_node
+```
+#### OR
+#### Python Terminal 2:
 ```shell
 source devel/setup.bash
 python3 GPSwaypointNav.py
 ```
+\
+
 Terminal 3 (launching the seperate gui):
 ```shell
 source /opt/ros/noetic/setup.bash
